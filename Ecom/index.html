@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo.jpeg" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prokart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mynavbar">
+      <div class="container-fluid">
+          <img src="images/logo.jpeg" alt="Logo" width="50px" height="50px">
+        <a class="navbar-brand" href="#">Prokart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-success my-lg-0 my-2" data-bs-toggle="modal" data-bs-target="#Modal">Sign in</button>
+      
+        </div>
+      </div>
+  </nav>
+ 
+    <!-- Modal -->
+
+    <div class="modal fade" id="Modal" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign In Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <input type="text" placeholder="Enter your name" class="form-control">
+              <input type="text" placeholder="Enter your email" class="form-control">
+              <input type="text" placeholder="Enter Password" class="form-control">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Home-->
+
+    <section id="home">
+        <h1 class="text-center">Prokart Products</h1>
+        <p>varities of goods and gadgets</p>
+        <div class="input-group m-3">
+            <input type="text" class="form-control" id="email" placeholder="Email Address">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal">Get Started</button>
+        </div>
+
+    </section>
+
+    <!--About-->
+
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 p-2" data-aos="fade-right">
+                   <img src="images/main.jpeg" class="img-fluid d-block mx-auto" alt="your browser doesn't support this img" >
+
+                </div>
+                <div class="col-sm-6 " data-aos="fade-left">
+                    <h1>About Us</h1>
+                    <p>Prokart provides you a variable number of goods at flexible rates,
+                      products are cheaper,better quality. Discounts are available for all products,
+                      we have worked on improving the quality of the goods.From the day of opening of this shop,
+                      we didn't get any single negative comments from customers.
+                    </p>
+                    <h3 class="text-center" style="color:orange">Pay less, Get more</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Products-->
+    
+    <section id="products">
+        <div class="container m-2">
+            <h1 class="text-center m-5">OUR PRODUCTS</h1>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <div class="card" data-aos="fade-left" >
+                        <img src="images/img1.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Narzo 10 pro</h5>
+                          <p class="card-text text-center text-success">&#8377; 14,999</p>
+                          <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" >
+                        <img src="images/img2.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Redmi Note 10</h5>
+                          <p class="card-text text-center">&#8377; 13,999</p>
+                          <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" >
+                        <img src="images/img3.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Infinix hot 5</h5>
+                          <p class="card-text text-center">&#8377; 7,999</p>
+                          <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="card" data-aos="fade-right" >
+                        <img src="images/img4.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Moto G5</h5>
+                          <p class="card-text text-center">&#8377; 11,999</p>
+                          <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-right">
+                        <img src="images/img5.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Iphone 10 pro </h5>
+                          <p class="card-text text-center">&#8377; 49,999</p>
+                          <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-right" >
+                        <img src="images/img6.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Samsung Galaxy</h5>
+                          <p class="card-text text-center">&#8377; 6,999</p>
+                          <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                  <div class="card" data-aos="fade-left" >
+                      <img src="images/img7.jpeg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Jio</h5>
+                        <p class="card-text text-center">&#8377; 999</p>
+                        <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                      </div>
+                  </div>
+                  <div class="card" data-aos="fade-left" >
+                      <img src="images/img8.jpeg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Infinix hot 8 pro</h5>
+                        <p class="card-text text-center">&#8377; 16,999</p>
+                        <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                      </div>
+                  </div>
+                  <div class="card" data-aos="fade-left" >
+                      <img src="images/img9.jpeg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Realme 7 pro</h5>
+                        <p class="card-text text-center">&#8377; 14,999</p>
+                        <a href="#" class="btn btn-primary mx-auto d-block">Add to cart</a>
+                      </div>
+                  </div>                 
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="text-center">CONTACT US</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/contact1.jpeg" alt="" data-aos="fade-right">
+                </div>
+                <div class="col-sm-6" data-aos="fade-left">
+                   <form>
+                    <input type="text"class="form-control" placeholder="Enter your name">
+                    <input type="text"class="form-control" placeholder="Enter your email">
+                    <textarea class="form-control" placeholder="Enter your message.."></textarea>
+                    <button class="btn btn-primary">Send Message</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer ><p>copyright &#169; sujith tech 2021</p>
+      <p>sujithinfotech@gmail.com</p>
+      <p>+91 9578463949</p>
+      <p>Feel free to contact at anytime,anywhere</p>
+    </footer>
+
+
+
+<!-- bootstrap js and popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    
+<!-- AOS library script -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
